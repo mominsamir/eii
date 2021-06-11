@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">EII</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item"  [routerLink]="['/graphic1']" [routerLinkActive]="['active']">Graphic 1</a>
+                <a class="dropdown-item" [routerLink]="['/graphic2']" [routerLinkActive]="['active']">Graphic 2</a>
+            </div>
+          </li>
+        <li class="nav-item" >
+          <a class="nav-link" [routerLink]="['/graphic1']" [routerLinkActive]="['active']">Graphic 1
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/graphic2']" [routerLinkActive]="['active']">Graphic 2</a>
+        </li>        
+      </ul>      
+    </div>
+</nav>
